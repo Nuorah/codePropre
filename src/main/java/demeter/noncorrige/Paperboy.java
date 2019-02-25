@@ -16,9 +16,8 @@ public class Paperboy {
 		double payment = 1.0;
 
 		for (Customer customer : customers) {
-			if (customer.getWallet().getMoney() >= payment) {
-				funds += payment;
-				customer.getWallet().setMoney(customer.getWallet().getMoney() - payment);
+			if (customer.getMoney() >= payment) {
+				customer.makePayement(this, payment);
 			}
 		}
 	}

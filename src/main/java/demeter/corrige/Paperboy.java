@@ -12,7 +12,7 @@ public class Paperboy {
 	}
 
 	public void collectPayments() {
-		// Le journal coûte 1€
+		// Le journal coute 1
 		double payment = 1.0;
 
 		for (Customer customer : customers) {

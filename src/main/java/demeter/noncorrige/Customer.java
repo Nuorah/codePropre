@@ -1,7 +1,7 @@
 package demeter.noncorrige;
 
 public class Customer {
-	
+
 	private Wallet wallet;
 
 	public Customer() {
@@ -29,5 +29,18 @@ public class Customer {
 	 */
 	public void setWallet(Wallet wallet) {
 		this.wallet = wallet;
+	}
+
+	public double getMoney() {
+		return this.getWallet().getMoney();
+	}
+
+	public void setMoney(double money) {
+		this.getWallet().setMoney(money);
+	}
+
+	public void makePayement(Paperboy paperBoy, double money) {
+		paperBoy.setFunds(paperBoy.getFunds() + money);
+		this.setMoney(this.getMoney() - money);
 	}
 }
