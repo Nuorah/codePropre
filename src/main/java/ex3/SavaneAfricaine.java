@@ -1,27 +1,10 @@
 package ex3;
 
-import java.util.List;
-
-public class SavaneAfricaine {
-
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
+public class SavaneAfricaine extends Zone {
 	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
-	}
-	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
-	
-	public int compterAnimaux(){
-		return noms.size();
-	}
+	private static final double MASSE_NOURRITURE = 10;
 
+	public SavaneAfricaine() {
+		super(MASSE_NOURRITURE);
+	}
 }
