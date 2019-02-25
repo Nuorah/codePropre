@@ -1,9 +1,12 @@
 package constructs;
 
-public class Une {
+public class Une extends Nombre{
 
 	public Une(){
-		super();
+	}
+	
+	@Override
+	public void compter(){
 		System.out.println("Une");
 	}
 }

@@ -1,10 +1,15 @@
 package constructs;
 
 public class Exec {
+	
+	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Deux deux = new Deux();
+	public static void main(String[] args) {	
+		Nombre une = new Une();
+		Nombre deux = new Deux();
+		
+		une.compter();
+		deux.compter();
 	}
 
 }
