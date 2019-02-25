@@ -4,7 +4,7 @@ package ex1;
  * Classe qui réalise des opérations arythmétiques
  * @author DIGINAMIC
  */
-public class calcul {
+public class Calcul {
 
 	/** Méthode qui retourne l'addition des paramètres a et b 
 	 * 
@@ -20,9 +20,9 @@ public class calcul {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return int
 	 */
-	public int get2(int a, int b){
+	public int soustraction(int a, int b){
 		return a-b;
 	}
 }
